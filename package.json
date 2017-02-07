@@ -1,0 +1,26 @@
+{
+  "name": "idea-logger",
+  "version": "1.0.0",
+  "description": "IdeaLogger",
+  "main": "index.js",
+  "scripts": {
+    "build": "(cd android/ && ./gradlew assembleDebug)",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --sourcemap-output android/app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/",
+     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjhe11e/IdeaLogger.git"
+  },
+  "author": "Kyle Helle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjhe11e/IdeaLogger/issues"
+  },
+  "homepage": "https://github.com/kjhe11e/IdeaLogger#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-native": "^0.41.2"
+  }
+}
