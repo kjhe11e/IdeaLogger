@@ -1,13 +1,5 @@
 apply plugin: 'com.android.application'
 
-allprojects {
-    repositories {
-        maven {
-            url "/home/khe11e/Dev/IdeaLogger/node_modules/react-native/android"
-        }
-    }
-}
-
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -32,10 +24,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    configurations.all {
-        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
-    }
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile "com.facebook.react:react-native:+"     // from node_modules.
+    compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
 }

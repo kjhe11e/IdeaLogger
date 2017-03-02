@@ -10,4 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.khe11e.idealogger.MainActivity">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Log idea here..."
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editText" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
 </RelativeLayout>
